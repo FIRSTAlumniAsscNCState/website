@@ -6,35 +6,38 @@
 
 module.exports = {
     siteName: 'FIRST Alumni Association at NC State',
-    plugins: [{
-        use: '@gridsome/source-filesystem',
-        options: {
-            baseDir: "./content",
-            path: './home/*.md',
-            remark: {
-                autolinkClassName: "fas fa-hashtag header-anchor",
-                autolinkHeadings: false
+    plugins: [
+        //     {
+        //     use: '@gridsome/source-filesystem',
+        //     options: {
+        //         baseDir: "./content",
+        //         path: './home/*.md',
+        //         remark: {
+        //             autolinkClassName: "fas fa-hashtag header-anchor",
+        //             autolinkHeadings: false
+        //         }
+        //     }
+        // },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                baseDir: "./content",
+                path: './leadership.yml',
+                typeName: "Leadership"
+            }
+        }, {
+            use: "@gridsome/vue-remark",
+            options: {
+                typeName: "Documentation",
+                baseDir: "./content/md",
+                pathPrefix: "/",
+                remark: {
+                    autolinkClassName: "fas fa-hashtag header-anchor",
+                    autolinkHeadings: false
+                }
             }
         }
-    }, {
-        use: '@gridsome/source-filesystem',
-        options: {
-            baseDir: "./content",
-            path: './home/leadership.yml',
-            typeName: "Leadership"
-        }
-    }, {
-        use: "@gridsome/vue-remark",
-        options: {
-            typeName: "Documentation",
-            baseDir: "./content/home",
-            pathPrefix: "/docs",
-            remark: {
-                autolinkClassName: "fas fa-hashtag header-anchor",
-                autolinkHeadings: false
-            }
-        }
-    }],
+    ],
     transformers: {
         remark: {
             autolinkClassName: "fas fa-hashtag header-anchor",

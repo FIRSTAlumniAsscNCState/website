@@ -1,6 +1,9 @@
 <template>
     <ul>
-        <li v-for="(member, i) in $static.leadership" :key="i">{{ member.name }}: {{member.title }}</li>
+        <li
+            v-for="(member, i) in $static.leadership.data"
+            :key="i"
+        >{{ member.name }}: {{member.title }}</li>
     </ul>
 </template>
 
@@ -13,7 +16,7 @@ export default {};
 
 <static-query>
 query {
-  leadership(path: "/home/leadership/") {
+  leadership(path: "/leadership/") {
     id
     path
     data {
