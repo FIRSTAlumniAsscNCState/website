@@ -1,4 +1,5 @@
 ---
+layout: ~/layouts/Home.vue
 title: Home
 ---
 

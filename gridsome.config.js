@@ -23,5 +23,22 @@ module.exports = {
             path: './home/leadership.yml',
             typeName: "Leadership"
         }
-    }]
+    }, {
+        use: "@gridsome/vue-remark",
+        options: {
+            typeName: "Documentation",
+            baseDir: "./content/home",
+            pathPrefix: "/docs",
+            remark: {
+                autolinkClassName: "fas fa-hashtag header-anchor",
+                autolinkHeadings: false
+            }
+        }
+    }],
+    transformers: {
+        remark: {
+            autolinkClassName: "fas fa-hashtag header-anchor",
+            autolinkHeadings: false
+        }
+    }
 }

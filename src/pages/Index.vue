@@ -1,6 +1,6 @@
 <template>
     <HomeLayout>
-        <div v-html="$static.fileNode.content"></div>
+        <div v-html="$static.homepageContent.content"></div>
     </HomeLayout>
 </template>
 
