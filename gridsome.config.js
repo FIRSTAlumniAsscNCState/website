@@ -9,8 +9,19 @@ module.exports = {
     plugins: [{
         use: '@gridsome/source-filesystem',
         options: {
-            baseDir: './content/home',
-            path: '*.md'
+            baseDir: "./content",
+            path: './home/*.md',
+            remark: {
+                autolinkClassName: "fas fa-hashtag header-anchor",
+                autolinkHeadings: false
+            }
+        }
+    }, {
+        use: '@gridsome/source-filesystem',
+        options: {
+            baseDir: "./content",
+            path: './home/leadership.yml',
+            typeName: "Leadership"
         }
     }]
 }

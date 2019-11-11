@@ -1,27 +1,37 @@
 <template>
-    <Layout v-html="$page.fileNode.content" />
+    <HomeLayout>
+        <div v-html="$static.fileNode.content"></div>
+    </HomeLayout>
 </template>
 
 <script>
 export default {
-    metaInfo: {
-        title: "Hello, world!"
+    metaInfo: function() {
+        return {
+            title: this.$static.homepageContent.title
+        };
     }
 };
 </script>
 
 <style>
-.home-links a {
-    margin-right: 1rem;
-}
 </style>
 
-<page-query>
+<static-query>
 query {
-  fileNode(path: "/homepage/") {
+  homepageContent: fileNode(path: "/home/homepage/") {
     id
     path
     content
+    title
+  }
+  leadership(path: "/home/leadership/") {
+    id
+    path
+    data {
+      name
+      title
+    }
   }
 }
-</page-query>
+</static-query>
