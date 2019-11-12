@@ -1,22 +1,11 @@
 <template>
     <div class="layout">
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <Navbar />
+        <section class="section">
             <div class="container">
-                <div class="navbar-brand">
-                    <a href class="navbar-item">
-                        <strong>
-                            <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-                        </strong>
-                    </a>
-                </div>
-                <div class="navbar-menu">
-                    <div class="navbar-end">
-                        <g-link class="navbar-item" to="/">Home</g-link>
-                        <g-link class="navbar-item" to="/about/">About</g-link>
-                    </div>
-                </div>
+                <MissionStatementHero />
             </div>
-        </nav>
+        </section>
         <section class="section">
             <div class="container box">
                 <div class="content">
@@ -24,16 +13,32 @@
                 </div>
             </div>
         </section>
+        <section class="section"></section>
+        <footer class="footer">
+            <div class="content container has-text-centered">
+                <div class="columns">
+                    <div class="column has-text-right is-three-quarters">
+                        <p>
+                            The
+                            <strong>FIRST Alumni Association at NC State</strong> is a student organization of
+                            <a
+                                href="https://ncsu.edu"
+                            >North Carolina State University</a>.
+                        </p>
+                    </div>
+                    <div class="column has-text-left">
+                        <g-image src="~/assets/logo.png"></g-image>
+                    </div>
+                </div>
+
+                <p class="is-size-7">
+                    Website design by
+                    <a href="https://samweaver.com">Sam Weaver</a>.
+                </p>
+            </div>
+        </footer>
     </div>
 </template>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <style lang="scss">
 .header-anchor {
@@ -46,4 +51,23 @@ query {
         color: inherit;
     }
 }
+
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-grow: 1;
+}
 </style>
+
+<script>
+import MissionStatementHero from "~/components/MissionStatementHero.vue";
+
+export default {
+    components: {
+        MissionStatementHero
+    }
+};
+</script>

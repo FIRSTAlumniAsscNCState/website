@@ -5,8 +5,6 @@ title: Home
 
 import LeadershipHeadshots from "~/components/LeadershipHeadshots.vue"
 
-Summary / mission statement
-
 # What we do
 
 We do stuff
