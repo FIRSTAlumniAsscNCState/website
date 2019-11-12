@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import Buefy from "buefy"
-import 'buefy/dist/buefy.css'
+import './main.scss'
 
 import HomeLayout from '~/layouts/Home.vue'
 
