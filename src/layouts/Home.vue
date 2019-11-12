@@ -18,7 +18,7 @@
             </div>
         </nav>
         <section class="section">
-            <div class="container">
+            <div class="container box">
                 <div class="content">
                     <slot />
                 </div>

@@ -4,44 +4,14 @@
 // Set your colors
 $primary: #cc0000;
 $primary-invert: findColorInvert($primary);
+$ncsu: #cc0000;
+$ncsu-invert: findColorInvert($primary);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
-$colors: (
-    "white": (
-        $white,
-        $black
-    ),
-    "black": (
-        $black,
-        $white
-    ),
-    "light": (
-        $light,
-        $light-invert
-    ),
-    "dark": (
-        $dark,
-        $dark-invert
-    ),
-    "primary": (
-        $primary,
-        $primary-invert
-    ),
-    "info": (
-        $info,
-        $info-invert
-    ),
-    "success": (
-        $success,
-        $success-invert
-    ),
-    "warning": (
-        $warning,
-        $warning-invert
-    ),
-    "danger": (
-        $danger,
-        $danger-invert
+$custom-colors: (
+    "ncsu": (
+        $ncsu,
+        $ncsu-invert
     )
 );
 
@@ -49,6 +19,9 @@ $colors: (
 $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
+
+// Set the padding on the container
+$gap: 128px;
 
 // Import Bulma and Buefy styles
 @import "~bulma";

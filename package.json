@@ -12,6 +12,7 @@
     "@gridsome/transformer-yaml": "^0.2.1",
     "@gridsome/vue-remark": "^0.1.8",
     "buefy": "^0.8.6",
+    "bulma": "^0.8.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
