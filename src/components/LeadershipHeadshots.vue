@@ -1,6 +1,6 @@
 <template>
-    <div class="columns is-multiline is-3">
-        <div class="column is-one-third" v-for="(member, i) in $static.leadership.data" :key="i">
+    <div class="columns is-multiline is-1 is-variable">
+        <div class="column is-2" v-for="(member, i) in $static.leadership.data" :key="i">
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-1by1">
@@ -16,8 +16,14 @@
                 <div class="card-content">
                     <div class="media">
                         <div class="media-content">
-                            <p class="title is-4">{{member.name}}</p>
-                            <p class="subtitle is-6">{{member.title}}</p>
+                            <p class="title is-6">{{member.name}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="subtitle is-7">{{member.title}}</p>
                         </div>
                     </div>
                 </div>
@@ -36,9 +42,21 @@ figure {
 }
 .columns {
     align-items: stretch;
+}
 
-    .card {
-        height: 100%;
+.card {
+    height: 100%;
+    // display: flex;
+
+    // .card-image,
+    // .card-content {
+    //     flex-grow: 1;
+    // }
+
+    .card-content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 </style>

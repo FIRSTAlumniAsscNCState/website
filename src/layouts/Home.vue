@@ -23,7 +23,10 @@
                             <strong>FIRST Alumni Association at NC State</strong> is a student organization of
                             <a
                                 href="https://ncsu.edu"
-                            >North Carolina State University</a>.
+                            >North Carolina State University</a>. We work closely with
+                            <a href="www.firstnorthcarolina.org">
+                                <i>FIRST</i> North Carolina
+                            </a>.
                         </p>
                     </div>
                     <div class="column has-text-left">
@@ -33,7 +36,8 @@
 
                 <p class="is-size-7">
                     Website design by
-                    <a href="https://samweaver.com">Sam Weaver</a>.
+                    <a href="https://samweaver.com">Sam Weaver</a>
+                    , &copy; {{new Date().getFullYear()}}
                 </p>
             </div>
         </footer>
