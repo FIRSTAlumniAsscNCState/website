@@ -6,29 +6,38 @@
 
 module.exports = {
     siteName: 'FIRST Alumni Association at NC State',
-    plugins: [{
-        use: '@gridsome/source-filesystem',
-        options: {
-            baseDir: "./content",
-            path: './leadership.yml',
-            typeName: "Leadership"
-        }
-    }, {
-        use: "@gridsome/vue-remark",
-        options: {
-            typeName: "Documentation",
-            baseDir: "./content/md",
-            pathPrefix: "/",
-            remark: {
-                autolinkClassName: "fas fa-hashtag header-anchor",
-                autolinkHeadings: false
+    plugins: [
+        // this plugin loads only the leadership information
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                baseDir: "./content",
+                path: './leadership.yml',
+                typeName: "Leadership"
+            }
+        },
+        // this does the heavy lifting and renders the html / vue markdown hybrid
+        {
+            use: "@gridsome/vue-remark",
+            options: {
+                typeName: "Content",
+                baseDir: "./content/md",
+                pathPrefix: "/",
+                remark: {
+                    autolinkClassName: "fas fa-hashtag header-anchor",
+                    autolinkHeadings: false
+                }
+            }
+        },
+        // this imports and parses all information about this md file,
+        // but we'll only use this for headers. This is a bit redundant
+        // when we use above, but we'll query one specific GQL item from here
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: './content/md/index.md',
+                typeName: "Homepage"
             }
         }
-    }],
-    transformers: {
-        remark: {
-            autolinkClassName: "fas fa-hashtag header-anchor",
-            autolinkHeadings: false
-        }
-    }
+    ]
 }

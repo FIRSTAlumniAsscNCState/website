@@ -10,8 +10,18 @@
             </div>-->
             <div class="navbar-menu">
                 <div class="navbar-end">
-                    <g-link class="navbar-item" to="/">Home</g-link>
-                    <g-link class="navbar-item" to="/about/">About</g-link>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">About us</a>
+
+                        <div class="navbar-dropdown is-right">
+                            <g-link
+                                v-for="(heading, i) in $static.homepage.headings"
+                                :key="i"
+                                class="navbar-item"
+                                :to="heading.anchor"
+                            >{{heading.value}}</g-link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,6 +39,12 @@ export default {};
 query {
   metadata {
     siteName
+  }
+  homepage(path: "/content/md/") {
+    headings {
+      value
+      anchor
+    }
   }
 }
 </static-query>

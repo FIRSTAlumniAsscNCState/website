@@ -19,7 +19,7 @@
                 <a href="https://www.ncsu.edu" target="_blank" class="button">What is NC State?</a>
             </div>
         </div>
-        <div class="column is-paddingless">
+        <div class="column is-paddingless is-hidden-touch">
             <Navbar />
         </div>
     </div>
