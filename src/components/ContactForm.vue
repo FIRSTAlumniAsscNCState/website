@@ -1,5 +1,8 @@
 <template>
-    <form name="Homepage Contact Form" netlify method="POST">
+    <form name="Homepage Contact Form" method="POST" netlify>
+        <!-- this line would normally be added by Netlify during the build process, but -->
+        <!-- it will be removed during "hyrdration" if we don't put it in the Vue component  -->
+        <input type="hidden" name="form-name" value="Homepage Contact Form" />
         <div class="columns">
             <div class="column">
                 <div class="field">
