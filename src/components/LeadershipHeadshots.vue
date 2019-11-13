@@ -46,12 +46,13 @@ figure {
 
 .card {
     height: 100%;
-    // display: flex;
 
-    // .card-image,
-    // .card-content {
-    //     flex-grow: 1;
-    // }
+    border-radius: 5px;
+
+    img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 
     .card-content {
         padding: 1rem;
