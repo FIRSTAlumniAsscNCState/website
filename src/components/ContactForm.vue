@@ -1,5 +1,5 @@
 <template>
-    <form name="Homepage Contact Form" data-netlify="true">
+    <form name="Homepage Contact Form" data-netlify="true" method="POST">
         <div class="columns">
             <div class="column">
                 <div class="field">
