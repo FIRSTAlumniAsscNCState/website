@@ -6,11 +6,13 @@ title: Home
 import LeadershipHeadshots from "~/components/LeadershipHeadshots.vue"
 import FIRSTCalendar from "~/components/FIRSTCalendar.vue"
 
-# What we do
+# What do we do?
 
 We do stuff
 
-# Who we are
+# Who are we?
+
+Our organization is comprised of dozens of student alumni, as well as a team of 6 student officers.
 
 <LeadershipHeadshots />
 
