@@ -1,5 +1,5 @@
 <template>
-    <form name="Homepage Contact Form">
+    <form name="Homepage Contact Form" data-netlify="true">
         <div class="columns">
             <div class="column">
                 <div class="field">
@@ -41,7 +41,7 @@
         </div>
         <div class="field is-grouped is-grouped-right">
             <p class="control">
-                <a class="button is-light">Submit</a>
+                <button type="submit" class="button is-light">Submit</button>
             </p>
         </div>
     </form>
