@@ -26,7 +26,10 @@
                             >North Carolina State University</a>. We work closely with
                             <a href="www.firstnorthcarolina.org">
                                 <i>FIRST</i> North Carolina
-                            </a>.
+                            </a> and
+                            <a
+                                href="https://www.ece.ncsu.edu/"
+                            >NC State's Electrical and Computing Engineering Department</a>.
                         </p>
                     </div>
                     <div class="column has-text-left">
