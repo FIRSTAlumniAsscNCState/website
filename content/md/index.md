@@ -4,6 +4,7 @@ title: Home
 ---
 
 import LeadershipHeadshots from "~/components/LeadershipHeadshots.vue"
+import Gallery from "~/components/Gallery.vue"
 import FIRSTCalendar from "~/components/FIRSTCalendar.vue"
 import ContactForm from "~/components/ContactForm.vue"
 
@@ -16,6 +17,8 @@ We're a club for _FIRST_ Alumni at NC State, and we conduct a variety of events 
 Our organization is comprised of dozens of student alumni, as well as a team of 6 student officers.
 
 <LeadershipHeadshots />
+
+<Gallery />
 
 # Upcoming volunteer opportunities
 
