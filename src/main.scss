@@ -6,6 +6,8 @@ $primary: #cc0000;
 $primary-invert: findColorInvert($primary);
 $ncsu: #cc0000;
 $ncsu-invert: findColorInvert($primary);
+$paypal: #f6d376;
+$paypal-invert: findColorInvert($paypal);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
@@ -48,6 +50,10 @@ $colors: (
     "ncsu": (
         $ncsu,
         $ncsu-invert
+    ),
+    "paypal": (
+        $paypal,
+        $paypal-invert
     )
 );
 
