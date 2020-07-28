@@ -24,7 +24,7 @@
                             <a
                                 href="https://ncsu.edu"
                             >North Carolina State University</a>. We work closely with
-                            <a href="www.firstnorthcarolina.org">
+                            <a href="http://www.firstnorthcarolina.org">
                                 <i>FIRST</i> North Carolina
                             </a> and
                             <a
@@ -74,7 +74,7 @@ import MissionStatementHero from "~/components/MissionStatementHero.vue";
 
 export default {
     components: {
-        MissionStatementHero
-    }
+        MissionStatementHero,
+    },
 };
 </script>
