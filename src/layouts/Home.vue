@@ -20,7 +20,9 @@
                     <div class="column has-text-right is-three-quarters">
                         <p>
                             The
-                            <strong>FIRST Alumni Association at NC State</strong> is a student organization of
+                            <strong>
+                                <i>FIRST</i> Alumni Association at NC State
+                            </strong> is a student organization of
                             <a
                                 href="https://ncsu.edu"
                             >North Carolina State University</a>. We work closely with
