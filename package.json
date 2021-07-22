@@ -13,7 +13,8 @@
     "@gridsome/vue-remark": "^0.1.8",
     "buefy": "^0.8.6",
     "bulma": "^0.8.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.23",
+    "sharp": "^0.28"
   },
   "devDependencies": {
     "node-sass": "^4.13.0",
